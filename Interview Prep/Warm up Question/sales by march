@@ -1,0 +1,21 @@
+#!/bin/python3      #commented but used when running the code on a linux environment
+
+
+# simple but 100% successful run....
+
+import math
+import os
+import random
+import re
+import sys
+
+
+def sockMerchant(n, arr):     # n --- number of stocks
+  sock_pair = {}
+  for i in arr:
+    sock_pair[i] = arr.count(i)//2
+  return sum(sock_pair)
+
+arr = [10,20,10,20,30]
+n = 5
+ans = sockMerchant(n,arr)
